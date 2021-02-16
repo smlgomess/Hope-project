@@ -1,1 +1,5 @@
-com\hopeproject\model\usuario.class
+com\hopeproject\controller\UsuarioController.class
+com\hopeproject\model\Usuario.class
+com\hopeproject\HopeProjectApplication.class
+com\hopeproject\service\UsuarioService.class
+com\hopeproject\repository\UsuarioRepository.class

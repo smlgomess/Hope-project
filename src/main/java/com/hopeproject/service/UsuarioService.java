@@ -26,7 +26,7 @@ public class UsuarioService {
 		return usuarioRepository.findAll();
 	}
 	
-	/* Update one user */
+	/* List one user */
 	
 	public Usuario findOne (Long userID) {
 		return usuarioRepository.findById(userID).get();

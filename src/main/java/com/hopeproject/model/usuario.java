@@ -16,7 +16,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 public class Usuario {
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
 	
 	@Column(name = "nome")
@@ -34,6 +34,9 @@ public class Usuario {
 	@Column(name = "classificacao")
 	private String classification;
 
+	
+	
+	
 	public Long getId() {
 		return id;
 	}

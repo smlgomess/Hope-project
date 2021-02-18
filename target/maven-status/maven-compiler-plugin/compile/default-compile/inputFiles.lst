@@ -1,5 +1,9 @@
 D:\Arquivos\sts-4.9.0.RELEASE\workspace\projetos\Hope-project\hope-project\src\main\java\com\hopeproject\HopeProjectApplication.java
 D:\Arquivos\sts-4.9.0.RELEASE\workspace\projetos\Hope-project\hope-project\src\main\java\com\hopeproject\model\Usuario.java
 D:\Arquivos\sts-4.9.0.RELEASE\workspace\projetos\Hope-project\hope-project\src\main\java\com\hopeproject\repository\UsuarioRepository.java
+D:\Arquivos\sts-4.9.0.RELEASE\workspace\projetos\Hope-project\hope-project\src\main\java\com\hopeproject\repository\CardRepository.java
+D:\Arquivos\sts-4.9.0.RELEASE\workspace\projetos\Hope-project\hope-project\src\main\java\com\hopeproject\controller\CardController.java
+D:\Arquivos\sts-4.9.0.RELEASE\workspace\projetos\Hope-project\hope-project\src\main\java\com\hopeproject\model\Card.java
 D:\Arquivos\sts-4.9.0.RELEASE\workspace\projetos\Hope-project\hope-project\src\main\java\com\hopeproject\controller\UsuarioController.java
+D:\Arquivos\sts-4.9.0.RELEASE\workspace\projetos\Hope-project\hope-project\src\main\java\com\hopeproject\service\CardService.java
 D:\Arquivos\sts-4.9.0.RELEASE\workspace\projetos\Hope-project\hope-project\src\main\java\com\hopeproject\service\UsuarioService.java

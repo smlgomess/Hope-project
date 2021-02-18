@@ -1,5 +1,9 @@
 com\hopeproject\controller\UsuarioController.class
+com\hopeproject\service\CardService.class
+com\hopeproject\controller\CardController.class
+com\hopeproject\model\Card.class
 com\hopeproject\model\Usuario.class
 com\hopeproject\HopeProjectApplication.class
 com\hopeproject\service\UsuarioService.class
+com\hopeproject\repository\CardRepository.class
 com\hopeproject\repository\UsuarioRepository.class

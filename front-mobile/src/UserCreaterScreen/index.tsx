@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View, TextInput, ScrollView, TouchableWithoutFeedback, Keyboard } from 'react-native';
-import { RectButton } from 'react-native-gesture-handler';
+import { StyleSheet, Text, View, TextInput,  TouchableWithoutFeedback, Keyboard } from 'react-native';
+import { RectButton, ScrollView } from 'react-native-gesture-handler';
 import Header from '../Header';
 
 function CreateUser() {
@@ -12,40 +12,40 @@ function CreateUser() {
   return (
     <>
       <Header />
-      <TouchableWithoutFeedback onPress={() => {
-        Keyboard.dismiss();
-      }}>    
-        <View style={styles.container}>
-          <ScrollView>
-            <Text style={{fontSize: 17,}}>Nome:</Text>
-            <View style={{alignItems: 'center',}}>          
-              <TextInput style={styles.input}/> 
-            </View>
-            <Text style={{fontSize: 17,}}>Nome de usuário:</Text>
-            <View style={{alignItems: 'center',}}>          
-              <TextInput style={styles.input}/> 
-            </View>       
-            <Text style={{fontSize: 17,}}>Senha:</Text>
-            <View style={{alignItems: 'center',}}>          
-              <TextInput style={styles.input}/> 
-            </View> 
-            <Text style={{fontSize: 17,}}>Email:</Text>
-            <View style={{alignItems: 'center',}}>          
-              <TextInput style={styles.input}/> 
-            </View>
-            <Text style={{fontSize: 17,}}>Situação:</Text>
-            <View style={{alignItems: 'center',}}>          
-              <TextInput
-              style={styles.input}
-              placeholder='Ex: dependente'
-              /> 
-            </View>
-            <RectButton style={styles.buttonBody} onPress={handleOnPress}>
-              <Text style={styles.buttonText}>concluir</Text>
-            </RectButton> 
-          </ScrollView>
-        </View>
-      </TouchableWithoutFeedback>
+      <ScrollView style={styles.container}>
+        <TouchableWithoutFeedback onPress={() => {
+          Keyboard.dismiss();
+        }}>    
+          <View >            
+              <Text style={{fontSize: 17,}}>Nome:</Text>
+              <View style={{alignItems: 'center',}}>          
+                <TextInput style={styles.input}/> 
+              </View>
+              <Text style={{fontSize: 17,}}>Nome de usuário:</Text>
+              <View style={{alignItems: 'center',}}>          
+                <TextInput style={styles.input}/> 
+              </View>       
+              <Text style={{fontSize: 17,}}>Senha:</Text>
+              <View style={{alignItems: 'center',}}>          
+                <TextInput style={styles.input}/> 
+              </View> 
+              <Text style={{fontSize: 17,}}>Email:</Text>
+              <View style={{alignItems: 'center',}}>          
+                <TextInput style={styles.input}/> 
+              </View>
+              <Text style={{fontSize: 17,}}>Situação:</Text>
+              <View style={{alignItems: 'center',}}>          
+                <TextInput
+                style={styles.input}
+                placeholder='Ex: dependente'
+                /> 
+              </View>
+              <RectButton style={styles.buttonBody} onPress={handleOnPress}>
+                <Text style={styles.buttonText}>concluir</Text>
+              </RectButton>             
+          </View>
+        </TouchableWithoutFeedback>
+      </ScrollView>
     </>
   );
 }
@@ -53,7 +53,7 @@ function CreateUser() {
 const styles = StyleSheet.create({
   container: {            
       flex: 1, 
-      paddingHorizontal: 17,
+      paddingHorizontal: 10,
       paddingTop: 15,      
   },  
   buttonBody:{
@@ -72,10 +72,11 @@ const styles = StyleSheet.create({
   input:{
     borderWidth: 1,
     borderColor: '#777',
-    padding: 13,
+    padding: 8,
     marginTop: 5,
-    width: 380,
+    width: '100%',
     marginBottom: 30, 
+    fontSize: 16
   }  
 });
 

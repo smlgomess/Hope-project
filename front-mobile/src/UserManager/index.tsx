@@ -28,17 +28,20 @@ function UserManager() {
         Keyboard.dismiss();
       }}>  
         <View style={styles.container}>
-        <RectButton style={styles.buttonBody} onPress={handleOnPressCreate}>
-            <Text style={styles.buttonText}>criar</Text>
-          </RectButton>  
-        <Text style={{fontSize: 17,}}>Digite um email:</Text>
-        <TextInput style={styles.input}/>
-        <RectButton style={styles.buttonBody} onPress={handleOnPressSearch}>
-          <Text style={styles.buttonText}>buscar</Text>
-        </RectButton> 
-        <RectButton style={styles.buttonBody} onPress={handleOnPressViewAll}>
-          <Text style={styles.buttonText}>listar todos</Text>
-        </RectButton>      
+          <RectButton style={styles.buttonBody} onPress={handleOnPressCreate}>
+              <Text style={styles.buttonText}>criar</Text>
+            </RectButton>  
+          <Text style={{fontSize: 17,}}>Digite um email:</Text>
+          <View style={{alignItems: 'center'}}>
+            <TextInput style={styles.input}/>
+          </View>
+          
+          <RectButton style={styles.buttonBody} onPress={handleOnPressSearch}>
+            <Text style={styles.buttonText}>buscar</Text>
+          </RectButton> 
+          <RectButton style={styles.buttonBody} onPress={handleOnPressViewAll}>
+            <Text style={styles.buttonText}>listar todos</Text>
+          </RectButton>      
         </View>
       </TouchableWithoutFeedback>
     </>
@@ -48,8 +51,8 @@ function UserManager() {
 const styles = StyleSheet.create({
   container: {            
     flex: 1, 
-    paddingHorizontal: 17,
-    paddingTop: 80, 
+    paddingHorizontal: 10,
+    paddingTop: 80,     
   },
   buttonBody:{
     backgroundColor: '#ede1ff',
@@ -67,10 +70,9 @@ const styles = StyleSheet.create({
   input:{
     borderWidth: 1,
     borderColor: '#777',
-    padding: 13,
+    padding: 8,
     marginTop: 5,
-    width: 380,
-    //marginBottom: 30, 
+    width: '100%'
   }  
 });
 

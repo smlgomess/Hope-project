@@ -1,44 +1,24 @@
 import React from 'react';
-import { StyleSheet, Text, View, TextInput, ScrollView } from 'react-native';
+import { StyleSheet, ScrollView } from 'react-native';
 import Header from '../Header';
+import ListModel from '../ListModel';
 
-function ListUser() {
-   var var1 = "read only"+'\n'+"read text";
+function ListUser() {   
       
    return (
     <>
       <Header />
       <ScrollView>
-        <View style={styles.container}>
-         
-            <TextInput 
-            style={styles.input}          
-            multiline
-            value = {var1}
-            editable = {false}/>
-          
-        </View>
+        <ListModel />
+        <ListModel />
+        <ListModel />
+        <ListModel />
+        <ListModel />
       </ScrollView>
     </>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {            
-    flex: 1, 
-    paddingHorizontal: 17,
-    paddingTop: 15,  
-  },
-  input:{
-    borderWidth: 1,
-    borderColor: '#777',
-    padding: 5,
-    marginTop: 5,
-    width: 380,
-    marginBottom: 30, 
-    height: 200,
-    fontSize: 20
-  }  
-});
+const styles = StyleSheet.create({});
 
 export default ListUser;

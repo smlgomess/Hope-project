@@ -32,9 +32,9 @@ function Home() {
 
 const styles = StyleSheet.create({
   container: {            
-      flex: 1, 
-      paddingHorizontal: 50,
-      paddingTop: 60
+    flex: 1, 
+    paddingHorizontal: 17,
+    paddingTop: 55
   },
   buttonBody:{
     backgroundColor: '#ede1ff',
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   buttonText:{
     textAlign: 'center',
     fontWeight: 'bold',
-    fontSize: 18,
+    fontSize: 22,
     color: '#4406a1',   
   }
 });

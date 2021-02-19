@@ -1,42 +1,44 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { RectButton } from 'react-native-gesture-handler';
+import { StyleSheet, Text, View, TextInput, ScrollView } from 'react-native';
 import Header from '../Header';
 
 function ListUser() {
-
-  const handleOnPress = () => {
-
-  }
-
-  return (
+   var var1 = "read only"+'\n'+"read text";
+      
+   return (
     <>
       <Header />
-      <View >
-        <Text>TEstando user list all screen</Text>
-      </View>
+      <ScrollView>
+        <View style={styles.container}>
+         
+            <TextInput 
+            style={styles.input}          
+            multiline
+            value = {var1}
+            editable = {false}/>
+          
+        </View>
+      </ScrollView>
     </>
   );
 }
 
 const styles = StyleSheet.create({
   container: {            
-      flex: 1, 
-      paddingHorizontal: 50,
-      paddingTop: 60
+    flex: 1, 
+    paddingHorizontal: 17,
+    paddingTop: 15,  
   },
-  buttonBody:{
-    backgroundColor: '#ede1ff',
-    padding: 20,
-    borderRadius: 7,
-    marginTop: 120
-  },
-  buttonText:{
-    textAlign: 'center',
-    fontWeight: 'bold',
-    fontSize: 18,
-    color: '#4406a1',   
-  }
+  input:{
+    borderWidth: 1,
+    borderColor: '#777',
+    padding: 5,
+    marginTop: 5,
+    width: 380,
+    marginBottom: 30, 
+    height: 200,
+    fontSize: 20
+  }  
 });
 
 export default ListUser;

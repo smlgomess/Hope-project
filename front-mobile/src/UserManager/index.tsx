@@ -13,7 +13,7 @@ function UserManager() {
   }
 
   const handleOnPressViewAll= () => {
-    navigation.navigate('ListAll')
+    navigation.navigate('ListAllUsers')
   }
 
   const handleOnPressSearch= () => {

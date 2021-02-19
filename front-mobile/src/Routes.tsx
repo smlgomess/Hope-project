@@ -7,6 +7,9 @@ import CardManager from './CardManager';
 import CreateUser from './UserCreaterScreen';
 import UpdateUser from './UserUpdateScreen';
 import ListUser from './UserListAll';
+import CreateCard from './CardCreaterScreen';
+import ListCards from './CardListAll';
+import UpdateCard from './CardUpdateScreen';
 
 
 const Stack = createStackNavigator();
@@ -27,7 +30,10 @@ function Routes(){
                 <Stack.Screen name="CardMng" component={CardManager}></Stack.Screen>   
                 <Stack.Screen name="CreateUser" component={CreateUser}></Stack.Screen>   
                 <Stack.Screen name="UpdateUser" component={UpdateUser}></Stack.Screen>   
-                <Stack.Screen name="ListAll" component={ListUser}></Stack.Screen>  
+                <Stack.Screen name="ListAllUsers" component={ListUser}></Stack.Screen>  
+                <Stack.Screen name="CreateCard" component={CreateCard}></Stack.Screen>   
+                <Stack.Screen name="UpdateCard" component={UpdateCard}></Stack.Screen>   
+                <Stack.Screen name="ListAllCards" component={ListCards}></Stack.Screen>  
                 
             </Stack.Navigator>
         </NavigationContainer>

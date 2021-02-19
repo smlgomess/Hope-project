@@ -19,7 +19,7 @@ import com.hopeproject.model.Card;
 import com.hopeproject.service.CardService;
 
 @RestController
-@RequestMapping("/carta")
+@RequestMapping("/client")
 public class CardController {
 	
 	@Autowired

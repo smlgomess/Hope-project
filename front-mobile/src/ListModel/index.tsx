@@ -1,10 +1,19 @@
 import React from 'react';
 import { StyleSheet, View, TextInput } from 'react-native';
+import { User } from '../types';
 
-function model() {
-   var sample = 'id:' + '\n'+ 'nome:' + '\n' + 'usuário:'
-                + '\n' + 'senha:' + '\n' + 'email:' 
-                + '\n'  + 'classificação:';
+type Props = {
+  user: User;
+}
+
+
+function model({ user }: Props) {
+   var modelo = 'id: ' + user.id + '\n'+
+                'nome: ' + user.name + '\n' + 
+                'usuário:' + user.nickname  + '\n' +
+                'senha:' + user.password+ '\n' + 
+                'email:' + user.email + '\n'  + 
+                'classificação:' + user.email;
       
    return (
     <>   
@@ -12,7 +21,7 @@ function model() {
             <TextInput 
             style={styles.input}          
             multiline
-            value = {sample}
+            value = {modelo}
             editable = {false}
             />          
         </View>    

@@ -20,7 +20,7 @@ function CardModel() {
             <Text style={styles.title}>{title}</Text>
             <Text style={styles.text}>{mainText}</Text>
             <RectButton style={styles.buttonBody} onPress={handleOnPress}>
-                <Text style={styles.buttonText}>continue vendo</Text>
+                <Text style={styles.buttonText}>veja mais</Text>
               </RectButton> 
         </View>    
     </>

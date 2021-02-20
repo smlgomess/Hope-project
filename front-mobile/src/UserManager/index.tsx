@@ -1,10 +1,12 @@
 import { useNavigation } from '@react-navigation/native';
-import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableWithoutFeedback, Keyboard } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
 import Header from '../Header';
 
-function UserManager() {
+function UserManager () {  
+
+  var id = '';
 
   const navigation = useNavigation();
 
@@ -16,10 +18,11 @@ function UserManager() {
     navigation.navigate('ListAllUsers')
   }
 
-  const handleOnPressSearch= () => {
+  const handleOnPressSearch= () => {      
     navigation.navigate('UpdateUser')
   }
    
+  
 
   return (
     <>
@@ -31,9 +34,12 @@ function UserManager() {
           <RectButton style={styles.buttonBody} onPress={handleOnPressCreate}>
               <Text style={styles.buttonText}>criar</Text>
             </RectButton>  
-          <Text style={{fontSize: 17,}}>Digite um email:</Text>
+          <Text style={{fontSize: 17,}}>Digite um Email:</Text>
           <View style={{alignItems: 'center'}}>
-            <TextInput style={styles.input}/>
+            <TextInput
+             style={styles.input}                          
+             onChangeText={(text) => id = text}
+             />
           </View>
           
           <RectButton style={styles.buttonBody} onPress={handleOnPressSearch}>
